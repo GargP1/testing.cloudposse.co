@@ -17,11 +17,11 @@ stages:
 
 steps:
   main_clone:
-    title: "Clone repository"
+    title: Cloning main repository...
     type: git-clone
+    repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
+    revision: '${{CF_REVISION}}'
     stage: Prepare
-    description: "Initialize"
-    repo: gargp1/testing.cloudposse.co
    
   build_image:
     title: Build image

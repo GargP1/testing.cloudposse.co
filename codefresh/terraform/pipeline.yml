@@ -22,7 +22,6 @@ steps:
     stage: Prepare
     description: "Initialize"
     repo: gargp1/testing.cloudposse.co
-    git: CF-default
    
   build_image:
     title: Build image

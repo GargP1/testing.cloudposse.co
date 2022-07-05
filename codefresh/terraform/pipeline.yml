@@ -21,9 +21,8 @@ steps:
     type: git-clone
     stage: Prepare
     description: "Initialize"
-    repo: ${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}
+    repo: gargp1/testing.cloudposse.co
     git: CF-default
-    revision: ${{CF_REVISION}}
    
   build_image:
     title: Build image
